@@ -44,7 +44,7 @@
     <!-- header container -->
     <header class="sm:container mx-auto mt-2  md:mt-6">
         <!-- navbar  -->
-        <div class="navbar bg-base-100 bg-[#F85559] rounded-[600px] mt-4 md:mt-6">
+        <div class="hidden navbar bg-base-100 bg-[#F85559] rounded-[600px] mt-4 md:mt-6">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
@@ -86,6 +86,51 @@
                 </button>
             </div>
         </div>
+
+
+        <!-- navbar -->
+        <nav class="bg-[#F85559] h-16 md:h-20 rounded-[600px] flex justify-between items-center px-4 md:px-6">
+            <!-- nav links -->
+            <div class="">
+                <!-- navbar items -->
+                <ul class="hidden md:flex gap-4">
+                    <li class="cursor-pointer text-base font-medium text-[#FFFFFF]"><a href="#">Home</a></li>
+                    <li class="cursor-pointer text-base font-medium text-[#FFFFFF]"><a href="#">About Us</a>
+                    </li>
+                    <li class="cursor-pointer text-base font-medium text-[#FFFFFF]"><a href="#">Shop</a></li>
+                    <li class="cursor-pointer text-base font-medium text-[#FFFFFF]"><a href="#">All
+                            Fruits</a></li>
+                </ul>
+                <!-- hamburger -->
+                <div class="order-last md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                        stroke="currentColor" class="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+
+                </div>
+            </div>
+            <!-- navbar brand logo -->
+            <div class="flex justify-around items-center gap-2 order-first md:order-none">
+                <img src="images/logo.png" alt="logo image" class="w-9 md:w-12">
+                <h2 class="text-xl md:text-3xl font-extrabold text-white">
+                    Fruit Burst
+                </h2>
+            </div>
+            <!-- search input -->
+            <div class="hidden w-[300px] h-11 rounded-[50px] bg-white md:flex items-center justify-between px-5">
+                <p class="text-[#12121266] text-sm md:text-base font-medium">
+                    Search here
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                    stroke="currentColor" class="size-5">
+                    <path strokeLinecap="round" strokeLinejoin="round"
+                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+
+            </div>
+        </nav>
 
 
         <!-- banner -->
